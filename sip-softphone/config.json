@@ -1,13 +1,18 @@
 {
   "name": "SIP Softphone (PJSUA)",
   "slug": "sip_softphone",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "SIP softphone using PJSUA CLI",
   "startup": "services",
   "boot": "auto",
   "host_network": true,
   "arch": ["aarch64"],
   "devices": ["/dev/snd:/dev/snd"],
+
+  "build_from": {
+  "aarch64": "ghcr.io/home-assistant/aarch64-base:3.19"
+   },
+
 
   "options": {
     "sip_server": "",

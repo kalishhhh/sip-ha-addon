@@ -1,4 +1,7 @@
-FROM ghcr.io/home-assistant/aarch64-addon-base:latest
+ARG BUILD_FROM
+FROM ${BUILD_FROM}
+
+ENV LANG C.UTF-8
 
 RUN apk add --no-cache \
     pjproject \
