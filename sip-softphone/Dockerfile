@@ -21,5 +21,9 @@ RUN /venv/bin/pip install --upgrade pip && \
 COPY server.py /app/server.py
 
 RUN mkdir -p /etc/services.d/sip
+
 COPY run.sh /etc/services.d/sip/run
+COPY finish.sh /etc/services.d/sip/finish
+
 RUN chmod +x /etc/services.d/sip/run
+RUN chmod +x /etc/services.d/sip/finish
