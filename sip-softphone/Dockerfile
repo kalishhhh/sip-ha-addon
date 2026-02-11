@@ -1,8 +1,8 @@
 ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM ${BUILD_FROM}
 
 RUN apk add --no-cache \
-    pjsip \
+    pjproject \
     python3 \
     py3-pip \
     alsa-lib \
