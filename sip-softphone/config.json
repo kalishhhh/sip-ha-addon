@@ -1,7 +1,7 @@
 {
   "name": "SIP Softphone (PJSUA)",
   "slug": "sip_softphone",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "SIP softphone using PJSUA CLI",
   "startup": "services",
   "boot": "auto",

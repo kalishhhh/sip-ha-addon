@@ -16,4 +16,5 @@ cat > /app/pjsua.conf <<EOF
 --null-audio
 EOF
 
-python3 /app/server.py
+/venv/bin/python /app/server.py
+
