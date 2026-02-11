@@ -17,8 +17,8 @@ RUN /venv/bin/pip install --upgrade pip && \
     /venv/bin/pip install -r /requirements.txt
 
 COPY server.py /app/server.py
-COPY run.sh /run.sh
-RUN chmod +x /run.sh
+# s6 service setup
+RUN mkdir -p /etc/services.d/sip
 
-WORKDIR /app
-CMD ["/run.sh"]
+COPY run.sh /etc/services.d/sip/run
+RUN chmod +x /etc/services.d/sip/run
