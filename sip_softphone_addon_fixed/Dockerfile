@@ -15,7 +15,7 @@ RUN apk add --no-cache \
     jq
 
 # Install Python packages
-RUN pip3 install --no-cache-dir \
+RUN pip3 install --no-cache-dir --break-system-packages \
     flask==3.0.0 \
     requests==2.31.0
 

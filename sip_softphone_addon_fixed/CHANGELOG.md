@@ -2,6 +2,11 @@
 
 ## [1.0.0] - 2025-02-11
 
+### Fixed
+- Corrected base image references to use hassio-addons base images
+- Fixed image version to use stable 16.3.2 release
+- Updated pip install to use --break-system-packages flag for Alpine compatibility
+
 ### Added
 - Initial release
 - SIP registration support
@@ -15,6 +20,6 @@
 
 ### Features
 - Flask-based API server
-- PJSUA2 integration for SIP/VoIP
+- PJSUA CLI integration for SIP/VoIP
 - Environment-based configuration
 - Graceful shutdown handling
